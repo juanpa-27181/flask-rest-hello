@@ -5,6 +5,8 @@ from eralchemy2 import render_er
 
 db = SQLAlchemy()
 
+## new comment
+## new comment
 class User(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
     email: Mapped[str] = mapped_column(String(120), unique=True, nullable=False)
